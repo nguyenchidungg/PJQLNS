@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ULulw5p8CU6OcgdvqM6AwrpqZrhWxOe4+j/3mAluBl8MBNq13CArwcxYDruJ25P1vbkI9rF1E2kTaN8CU5np8Q==",
+  "dgSpecHash": "aenR/99nb/woogWyBJvC514AGeGZDPrT2ztDceNev8gOYK7SOxh5PW2gz/5Y2PodKCpl2FD7ViCEPHCNz1JdmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\OneDrive\\Tài liệu\\GitHub\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+  "projectFilePath": "C:\\Users\\USER\\OneDrive\\Tài liệu\\GitHub\\PJQLNS\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
