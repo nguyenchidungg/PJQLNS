@@ -40,6 +40,9 @@ namespace Giao_dien_quan_ly_thu_vien
             this.LinhvucToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoaisachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TacgiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ThemTGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.XoaTGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SuaTGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HoadonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NhaxuatbanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,14 +85,14 @@ namespace Giao_dien_quan_ly_thu_vien
             // CapnhapToolStripMenuItem
             // 
             this.CapnhapToolStripMenuItem.Name = "CapnhapToolStripMenuItem";
-            this.CapnhapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.CapnhapToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.CapnhapToolStripMenuItem.Text = "CẬP NHẬT";
             this.CapnhapToolStripMenuItem.Click += new System.EventHandler(this.CapnhapToolStripMenuItem_Click);
             // 
             // DangxuatToolStripMenuItem
             // 
             this.DangxuatToolStripMenuItem.Name = "DangxuatToolStripMenuItem";
-            this.DangxuatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.DangxuatToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.DangxuatToolStripMenuItem.Text = "ĐĂNG XUẤT";
             this.DangxuatToolStripMenuItem.Click += new System.EventHandler(this.DangxuatToolStripMenuItem_Click);
             // 
@@ -106,21 +109,21 @@ namespace Giao_dien_quan_ly_thu_vien
             // ThemsachToolStripMenuItem
             // 
             this.ThemsachToolStripMenuItem.Name = "ThemsachToolStripMenuItem";
-            this.ThemsachToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ThemsachToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.ThemsachToolStripMenuItem.Text = "THÊM SÁCH";
             this.ThemsachToolStripMenuItem.Click += new System.EventHandler(this.ThemsachToolStripMenuItem_Click);
             // 
             // XoasachToolStripMenuItem
             // 
             this.XoasachToolStripMenuItem.Name = "XoasachToolStripMenuItem";
-            this.XoasachToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.XoasachToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.XoasachToolStripMenuItem.Text = "XÓA SÁCH";
             this.XoasachToolStripMenuItem.Click += new System.EventHandler(this.XoasachToolStripMenuItem_Click);
             // 
             // SuasachToolStripMenuItem
             // 
             this.SuasachToolStripMenuItem.Name = "SuasachToolStripMenuItem";
-            this.SuasachToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.SuasachToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.SuasachToolStripMenuItem.Text = "SỬA SÁCH";
             this.SuasachToolStripMenuItem.Click += new System.EventHandler(this.SuasachToolStripMenuItem_Click);
             // 
@@ -140,10 +143,34 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // TacgiaToolStripMenuItem
             // 
+            this.TacgiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ThemTGToolStripMenuItem,
+            this.XoaTGToolStripMenuItem,
+            this.SuaTGToolStripMenuItem});
             this.TacgiaToolStripMenuItem.Name = "TacgiaToolStripMenuItem";
             this.TacgiaToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.TacgiaToolStripMenuItem.Text = "TÁC GIẢ";
-            this.TacgiaToolStripMenuItem.Click += new System.EventHandler(this.TacgiaToolStripMenuItem_Click);
+            // 
+            // ThemTGToolStripMenuItem
+            // 
+            this.ThemTGToolStripMenuItem.Name = "ThemTGToolStripMenuItem";
+            this.ThemTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ThemTGToolStripMenuItem.Text = "THÊM TÁC GIẢ";
+            this.ThemTGToolStripMenuItem.Click += new System.EventHandler(this.ThemTGToolStripMenuItem_Click);
+            // 
+            // XoaTGToolStripMenuItem
+            // 
+            this.XoaTGToolStripMenuItem.Name = "XoaTGToolStripMenuItem";
+            this.XoaTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.XoaTGToolStripMenuItem.Text = "XÓA TÁC GIẢ";
+            this.XoaTGToolStripMenuItem.Click += new System.EventHandler(this.XoaTGToolStripMenuItem_Click);
+            // 
+            // SuaTGToolStripMenuItem
+            // 
+            this.SuaTGToolStripMenuItem.Name = "SuaTGToolStripMenuItem";
+            this.SuaTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.SuaTGToolStripMenuItem.Text = "SỬA TÁC GIẢ";
+            this.SuaTGToolStripMenuItem.Click += new System.EventHandler(this.SuaTGToolStripMenuItem_Click);
             // 
             // HoadonToolStripMenuItem
             // 
@@ -229,5 +256,8 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.ToolStripMenuItem KhoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NhaxuatbanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ThongkeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ThemTGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem XoaTGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SuaTGToolStripMenuItem;
     }
 }

@@ -80,16 +80,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Show();
         }
 
-        private void TacgiaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Khi ấn đăng nhập thì hiện ra giao diện fTacGia
-            fTacGia f = new fTacGia();
-            this.Hide();
-            //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
-            f.ShowDialog();
-            this.Show();
-        }
-
         private void KhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fKho
@@ -124,6 +114,33 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fThongKe
             fThongKe f = new fThongKe();
+            this.Hide();
+            //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void XoaTGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fXoaTacGia f = new fXoaTacGia();
+            this.Hide();
+            //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void ThemTGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fThemTacGia f = new fThemTacGia();
+            this.Hide();
+            //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void SuaTGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fSuaTacGia f = new fSuaTacGia();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();

@@ -36,18 +36,19 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbTenTacGia = new System.Windows.Forms.TextBox();
             this.txTenTacGia = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox_QueQuan = new System.Windows.Forms.CheckBox();
             this.txbQueQuan = new System.Windows.Forms.TextBox();
             this.txQueQuan = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.checkBox_NgaySinh = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txbNgaySinh = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.checkBox_NgayMat = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NgayMat = new System.Windows.Forms.DateTimePicker();
             this.txNgayMat = new System.Windows.Forms.Label();
             this.bThem = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
-            this.checkBox_NgaySinh = new System.Windows.Forms.CheckBox();
-            this.checkbox_NgayMat = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -110,12 +111,24 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.checkBox_QueQuan);
             this.panel3.Controls.Add(this.txbQueQuan);
             this.panel3.Controls.Add(this.txQueQuan);
             this.panel3.Location = new System.Drawing.Point(12, 174);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(513, 75);
             this.panel3.TabIndex = 4;
+            // 
+            // checkBox_QueQuan
+            // 
+            this.checkBox_QueQuan.AutoSize = true;
+            this.checkBox_QueQuan.Location = new System.Drawing.Point(182, 51);
+            this.checkBox_QueQuan.Name = "checkBox_QueQuan";
+            this.checkBox_QueQuan.Size = new System.Drawing.Size(96, 24);
+            this.checkBox_QueQuan.TabIndex = 11;
+            this.checkBox_QueQuan.Text = "CHƯA RÕ";
+            this.checkBox_QueQuan.UseVisualStyleBackColor = true;
+            this.checkBox_QueQuan.CheckedChanged += new System.EventHandler(this.checkBox_QueQuan_CheckedChanged);
             // 
             // txbQueQuan
             // 
@@ -144,6 +157,17 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel8.Size = new System.Drawing.Size(513, 87);
             this.panel8.TabIndex = 10;
             // 
+            // checkBox_NgaySinh
+            // 
+            this.checkBox_NgaySinh.AutoSize = true;
+            this.checkBox_NgaySinh.Location = new System.Drawing.Point(182, 59);
+            this.checkBox_NgaySinh.Name = "checkBox_NgaySinh";
+            this.checkBox_NgaySinh.Size = new System.Drawing.Size(96, 24);
+            this.checkBox_NgaySinh.TabIndex = 10;
+            this.checkBox_NgaySinh.Text = "CHƯA RÕ";
+            this.checkBox_NgaySinh.UseVisualStyleBackColor = true;
+            this.checkBox_NgaySinh.CheckedChanged += new System.EventHandler(this.checkBox_NgaySinh_CheckedChanged);
+            // 
             // dateTimePicker_NgaySinh
             // 
             this.dateTimePicker_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -164,13 +188,24 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.checkbox_NgayMat);
+            this.panel4.Controls.Add(this.checkBox_NgayMat);
             this.panel4.Controls.Add(this.dateTimePicker_NgayMat);
             this.panel4.Controls.Add(this.txNgayMat);
             this.panel4.Location = new System.Drawing.Point(12, 348);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(513, 89);
             this.panel4.TabIndex = 11;
+            // 
+            // checkBox_NgayMat
+            // 
+            this.checkBox_NgayMat.AutoSize = true;
+            this.checkBox_NgayMat.Location = new System.Drawing.Point(182, 59);
+            this.checkBox_NgayMat.Name = "checkBox_NgayMat";
+            this.checkBox_NgayMat.Size = new System.Drawing.Size(96, 24);
+            this.checkBox_NgayMat.TabIndex = 11;
+            this.checkBox_NgayMat.Text = "CHƯA RÕ";
+            this.checkBox_NgayMat.UseVisualStyleBackColor = true;
+            this.checkBox_NgayMat.CheckedChanged += new System.EventHandler(this.checkBox_NgayMat_CheckedChanged);
             // 
             // dateTimePicker_NgayMat
             // 
@@ -198,6 +233,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.bThem.TabIndex = 13;
             this.bThem.Text = "THÊM";
             this.bThem.UseVisualStyleBackColor = true;
+            this.bThem.Click += new System.EventHandler(this.bThem_Click);
             // 
             // fThoat
             // 
@@ -208,26 +244,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.Text = "THOÁT";
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
-            // 
-            // checkBox_NgaySinh
-            // 
-            this.checkBox_NgaySinh.AutoSize = true;
-            this.checkBox_NgaySinh.Location = new System.Drawing.Point(182, 59);
-            this.checkBox_NgaySinh.Name = "checkBox_NgaySinh";
-            this.checkBox_NgaySinh.Size = new System.Drawing.Size(96, 24);
-            this.checkBox_NgaySinh.TabIndex = 10;
-            this.checkBox_NgaySinh.Text = "CHƯA RÕ";
-            this.checkBox_NgaySinh.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_NgayMat
-            // 
-            this.checkbox_NgayMat.AutoSize = true;
-            this.checkbox_NgayMat.Location = new System.Drawing.Point(182, 59);
-            this.checkbox_NgayMat.Name = "checkbox_NgayMat";
-            this.checkbox_NgayMat.Size = new System.Drawing.Size(96, 24);
-            this.checkbox_NgayMat.TabIndex = 11;
-            this.checkbox_NgayMat.Text = "CHƯA RÕ";
-            this.checkbox_NgayMat.UseVisualStyleBackColor = true;
             // 
             // fThemTacGia
             // 
@@ -241,8 +257,10 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fThemTacGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "THÊM TÁC GIẢ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -277,6 +295,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Button bThem;
         private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.CheckBox checkBox_NgaySinh;
-        private System.Windows.Forms.CheckBox checkbox_NgayMat;
+        private System.Windows.Forms.CheckBox checkBox_NgayMat;
+        private System.Windows.Forms.CheckBox checkBox_QueQuan;
     }
 }

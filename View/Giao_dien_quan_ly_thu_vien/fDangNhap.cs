@@ -49,6 +49,8 @@ namespace Giao_dien_quan_ly_thu_vien
                     count = 1;
                 }
             }
+            txbTenDangNhap.Text = "";
+            txbMatKhau.Text = "";
         }
 
         bool Login(string username, string password)

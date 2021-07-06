@@ -4,9 +4,6 @@
     <Compile Update="fBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="fChiTietHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,34 +25,16 @@
     <Compile Update="fSuaHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="fSuaKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="fSuaSach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fSuaTacGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="fTacGia.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="fTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fThemHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fThemKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fThemLinhVuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fThemLoaiSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fThemNXB.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fThemSach.cs">
@@ -71,18 +50,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fXoaHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fXoaKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fXoaLinhVuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fXoaLoaiSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fXoaNXB.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fXoaSach.cs">

@@ -36,28 +36,35 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbMKMoi = new System.Windows.Forms.TextBox();
             this.txbMatKhauMoi = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbMKMoiNhapLai = new System.Windows.Forms.TextBox();
             this.txbNhapLai = new System.Windows.Forms.Label();
-            this.bDangNhap = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bCapNhap = new System.Windows.Forms.Button();
+            this.fThoat = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.bChon = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbMKHienTai = new System.Windows.Forms.TextBox();
+            this.txMKHT = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txbTenDangNhap);
             this.panel2.Controls.Add(this.txbTenDangNhap1);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Location = new System.Drawing.Point(12, 234);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 75);
             this.panel2.TabIndex = 1;
@@ -83,9 +90,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // panel4
             // 
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.txbMKMoi);
             this.panel4.Controls.Add(this.txbMatKhauMoi);
-            this.panel4.Location = new System.Drawing.Point(12, 93);
+            this.panel4.Location = new System.Drawing.Point(11, 396);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(513, 75);
             this.panel4.TabIndex = 3;
@@ -117,13 +124,13 @@ namespace Giao_dien_quan_ly_thu_vien
             this.label1.TabIndex = 0;
             this.label1.Text = "MẬT KHẨU";
             // 
-            // textBox3
+            // txbMKMoi
             // 
-            this.textBox3.Location = new System.Drawing.Point(182, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(328, 27);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.txbMKMoi.Location = new System.Drawing.Point(182, 24);
+            this.txbMKMoi.Name = "txbMKMoi";
+            this.txbMKMoi.Size = new System.Drawing.Size(328, 27);
+            this.txbMKMoi.TabIndex = 3;
+            this.txbMKMoi.UseSystemPasswordChar = true;
             // 
             // txbMatKhauMoi
             // 
@@ -138,47 +145,27 @@ namespace Giao_dien_quan_ly_thu_vien
             // panel6
             // 
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.textBox6);
+            this.panel6.Controls.Add(this.txbMKMoiNhapLai);
             this.panel6.Controls.Add(this.txbNhapLai);
-            this.panel6.Location = new System.Drawing.Point(12, 174);
+            this.panel6.Location = new System.Drawing.Point(11, 477);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(513, 75);
             this.panel6.TabIndex = 4;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox5);
-            this.panel7.Controls.Add(this.label2);
             this.panel7.Location = new System.Drawing.Point(0, 81);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(513, 75);
+            this.panel7.Size = new System.Drawing.Size(513, 30);
             this.panel7.TabIndex = 3;
             // 
-            // textBox5
+            // txbMKMoiNhapLai
             // 
-            this.textBox5.Location = new System.Drawing.Point(182, 24);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(328, 27);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.UseSystemPasswordChar = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(3, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "MẬT KHẨU";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(182, 24);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(328, 27);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.UseSystemPasswordChar = true;
+            this.txbMKMoiNhapLai.Location = new System.Drawing.Point(182, 24);
+            this.txbMKMoiNhapLai.Name = "txbMKMoiNhapLai";
+            this.txbMKMoiNhapLai.Size = new System.Drawing.Size(328, 27);
+            this.txbMKMoiNhapLai.TabIndex = 4;
+            this.txbMKMoiNhapLai.UseSystemPasswordChar = true;
             // 
             // txbNhapLai
             // 
@@ -190,36 +177,115 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbNhapLai.TabIndex = 0;
             this.txbNhapLai.Text = "NHẬP LẠI:";
             // 
-            // bDangNhap
+            // bCapNhap
             // 
-            this.bDangNhap.Location = new System.Drawing.Point(271, 277);
-            this.bDangNhap.Name = "bDangNhap";
-            this.bDangNhap.Size = new System.Drawing.Size(121, 29);
-            this.bDangNhap.TabIndex = 5;
-            this.bDangNhap.Text = "CẬP NHẬT";
-            this.bDangNhap.UseVisualStyleBackColor = true;
+            this.bCapNhap.Location = new System.Drawing.Point(11, 559);
+            this.bCapNhap.Name = "bCapNhap";
+            this.bCapNhap.Size = new System.Drawing.Size(183, 29);
+            this.bCapNhap.TabIndex = 5;
+            this.bCapNhap.Text = "CẬP NHẬT";
+            this.bCapNhap.UseVisualStyleBackColor = true;
+            this.bCapNhap.Click += new System.EventHandler(this.bCapNhap_Click);
             // 
-            // button1
+            // fThoat
             // 
-            this.button1.Location = new System.Drawing.Point(404, 277);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "THOÁT";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.fThoat.Location = new System.Drawing.Point(402, 558);
+            this.fThoat.Name = "fThoat";
+            this.fThoat.Size = new System.Drawing.Size(121, 29);
+            this.fThoat.TabIndex = 6;
+            this.fThoat.Text = "THOÁT";
+            this.fThoat.UseVisualStyleBackColor = true;
+            this.fThoat.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(510, 178);
+            this.listView1.TabIndex = 16;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // bChon
+            // 
+            this.bChon.Location = new System.Drawing.Point(11, 196);
+            this.bChon.Name = "bChon";
+            this.bChon.Size = new System.Drawing.Size(123, 29);
+            this.bChon.TabIndex = 17;
+            this.bChon.Text = "CHỌN";
+            this.bChon.UseVisualStyleBackColor = true;
+            this.bChon.Click += new System.EventHandler(this.bChon_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.txbMKHienTai);
+            this.panel1.Controls.Add(this.txMKHT);
+            this.panel1.Location = new System.Drawing.Point(11, 315);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(513, 75);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(0, 81);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(513, 75);
+            this.panel3.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(182, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(328, 27);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.UseSystemPasswordChar = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(3, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "MẬT KHẨU";
+            // 
+            // txbMKHienTai
+            // 
+            this.txbMKHienTai.Location = new System.Drawing.Point(219, 24);
+            this.txbMKHienTai.Name = "txbMKHienTai";
+            this.txbMKHienTai.Size = new System.Drawing.Size(291, 27);
+            this.txbMKHienTai.TabIndex = 3;
+            this.txbMKHienTai.UseSystemPasswordChar = true;
+            // 
+            // txMKHT
+            // 
+            this.txMKHT.AutoSize = true;
+            this.txMKHT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txMKHT.Location = new System.Drawing.Point(3, 27);
+            this.txMKHT.Name = "txMKHT";
+            this.txMKHT.Size = new System.Drawing.Size(210, 24);
+            this.txMKHT.TabIndex = 0;
+            this.txMKHT.Text = "MẬT KHẨU HIỆN TẠI:";
             // 
             // fTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(536, 314);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bDangNhap);
+            this.ClientSize = new System.Drawing.Size(536, 594);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bChon);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.fThoat);
+            this.Controls.Add(this.bCapNhap);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THÔNG TIN TÀI KHOẢN";
@@ -231,8 +297,10 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -246,15 +314,21 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbMKMoi;
         private System.Windows.Forms.Label txbMatKhauMoi;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbMKMoiNhapLai;
         private System.Windows.Forms.Label txbNhapLai;
-        private System.Windows.Forms.Button bDangNhap;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bCapNhap;
+        private System.Windows.Forms.Button fThoat;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button bChon;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txbMKHienTai;
+        private System.Windows.Forms.Label txMKHT;
     }
 }

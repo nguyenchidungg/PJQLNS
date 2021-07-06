@@ -48,6 +48,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // cbMaHD
             // 
+            this.cbMaHD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaHD.FormattingEnabled = true;
             this.cbMaHD.Location = new System.Drawing.Point(182, 23);
             this.cbMaHD.Name = "cbMaHD";

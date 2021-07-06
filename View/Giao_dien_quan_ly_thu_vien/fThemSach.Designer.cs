@@ -32,7 +32,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbMaSach = new System.Windows.Forms.TextBox();
             this.txMaSach = new System.Windows.Forms.Label();
-            this.cbMaTacGia = new System.Windows.Forms.ComboBox();
+            this.cbTenTacGia = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -43,7 +43,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txMaTacGia = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txTenLinhVuc = new System.Windows.Forms.Label();
-            this.cbMaLinhVuc = new System.Windows.Forms.ComboBox();
+            this.cbTenLinhVuc = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.numericUpDownGiaMua = new System.Windows.Forms.NumericUpDown();
             this.txGiaMua = new System.Windows.Forms.Label();
@@ -58,14 +58,11 @@ namespace Giao_dien_quan_ly_thu_vien
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.txTenLoaiSach = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTenLoaiSach = new System.Windows.Forms.ComboBox();
             this.fThoat = new System.Windows.Forms.Button();
             this.bThem = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txbTenTacGia = new System.Windows.Forms.TextBox();
-            this.txTenTacGia = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbTenNXB = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,7 +77,6 @@ namespace Giao_dien_quan_ly_thu_vien
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGiaBia)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +88,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 75);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txbMaSach
             // 
@@ -112,13 +107,14 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txMaSach.TabIndex = 0;
             this.txMaSach.Text = "MÃ SÁCH";
             // 
-            // cbMaTacGia
+            // cbTenTacGia
             // 
-            this.cbMaTacGia.FormattingEnabled = true;
-            this.cbMaTacGia.Location = new System.Drawing.Point(182, 28);
-            this.cbMaTacGia.Name = "cbMaTacGia";
-            this.cbMaTacGia.Size = new System.Drawing.Size(328, 28);
-            this.cbMaTacGia.TabIndex = 3;
+            this.cbTenTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenTacGia.FormattingEnabled = true;
+            this.cbTenTacGia.Location = new System.Drawing.Point(182, 28);
+            this.cbTenTacGia.Name = "cbTenTacGia";
+            this.cbTenTacGia.Size = new System.Drawing.Size(328, 28);
+            this.cbTenTacGia.TabIndex = 3;
             // 
             // panel1
             // 
@@ -129,7 +125,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(513, 75);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel11
             // 
@@ -174,12 +169,11 @@ namespace Giao_dien_quan_ly_thu_vien
             this.label1.Size = new System.Drawing.Size(107, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "TÊN SÁCH";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txMaTacGia);
-            this.panel3.Controls.Add(this.cbMaTacGia);
+            this.panel3.Controls.Add(this.cbTenTacGia);
             this.panel3.Location = new System.Drawing.Point(12, 174);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(513, 75);
@@ -191,15 +185,15 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txMaTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txMaTacGia.Location = new System.Drawing.Point(3, 28);
             this.txMaTacGia.Name = "txMaTacGia";
-            this.txMaTacGia.Size = new System.Drawing.Size(126, 23);
+            this.txMaTacGia.Size = new System.Drawing.Size(134, 23);
             this.txMaTacGia.TabIndex = 0;
-            this.txMaTacGia.Text = "MÃ TÁC GIẢ";
+            this.txMaTacGia.Text = "TÊN TÁC GIẢ";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.txTenLinhVuc);
-            this.panel4.Controls.Add(this.cbMaLinhVuc);
-            this.panel4.Location = new System.Drawing.Point(12, 336);
+            this.panel4.Controls.Add(this.cbTenLinhVuc);
+            this.panel4.Location = new System.Drawing.Point(12, 255);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(513, 75);
             this.panel4.TabIndex = 5;
@@ -214,19 +208,20 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txTenLinhVuc.TabIndex = 0;
             this.txTenLinhVuc.Text = "TÊN LĨNH VỰC";
             // 
-            // cbMaLinhVuc
+            // cbTenLinhVuc
             // 
-            this.cbMaLinhVuc.FormattingEnabled = true;
-            this.cbMaLinhVuc.Location = new System.Drawing.Point(182, 23);
-            this.cbMaLinhVuc.Name = "cbMaLinhVuc";
-            this.cbMaLinhVuc.Size = new System.Drawing.Size(328, 28);
-            this.cbMaLinhVuc.TabIndex = 4;
+            this.cbTenLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenLinhVuc.FormattingEnabled = true;
+            this.cbTenLinhVuc.Location = new System.Drawing.Point(182, 23);
+            this.cbTenLinhVuc.Name = "cbTenLinhVuc";
+            this.cbTenLinhVuc.Size = new System.Drawing.Size(328, 28);
+            this.cbTenLinhVuc.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.numericUpDownGiaMua);
             this.panel5.Controls.Add(this.txGiaMua);
-            this.panel5.Location = new System.Drawing.Point(13, 579);
+            this.panel5.Location = new System.Drawing.Point(13, 498);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(513, 75);
             this.panel5.TabIndex = 6;
@@ -252,7 +247,6 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0,
             0});
-            this.numericUpDownGiaMua.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // txGiaMua
             // 
@@ -268,7 +262,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel6.Controls.Add(this.numericUpDownLanTaiBan);
             this.panel6.Controls.Add(this.txLanTaiBan);
-            this.panel6.Location = new System.Drawing.Point(13, 741);
+            this.panel6.Location = new System.Drawing.Point(13, 660);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(513, 75);
             this.panel6.TabIndex = 8;
@@ -279,7 +273,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.numericUpDownLanTaiBan.Name = "numericUpDownLanTaiBan";
             this.numericUpDownLanTaiBan.Size = new System.Drawing.Size(328, 27);
             this.numericUpDownLanTaiBan.TabIndex = 8;
-            this.numericUpDownLanTaiBan.ValueChanged += new System.EventHandler(this.numericUpDownLanTaiBan_ValueChanged);
             // 
             // txLanTaiBan
             // 
@@ -295,7 +288,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel7.Controls.Add(this.numericUpDownGiaBia);
             this.panel7.Controls.Add(this.txGiaBia);
-            this.panel7.Location = new System.Drawing.Point(13, 660);
+            this.panel7.Location = new System.Drawing.Point(13, 579);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(513, 75);
             this.panel7.TabIndex = 9;
@@ -336,7 +329,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel8.Controls.Add(this.dateTimePicker_NamXuatBan);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Location = new System.Drawing.Point(12, 822);
+            this.panel8.Location = new System.Drawing.Point(12, 741);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(513, 75);
             this.panel8.TabIndex = 9;
@@ -358,13 +351,12 @@ namespace Giao_dien_quan_ly_thu_vien
             this.label2.Size = new System.Drawing.Size(155, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "NĂM XUẤT BẢN";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.txTenLoaiSach);
-            this.panel9.Controls.Add(this.comboBox1);
-            this.panel9.Location = new System.Drawing.Point(12, 417);
+            this.panel9.Controls.Add(this.cbTenLoaiSach);
+            this.panel9.Location = new System.Drawing.Point(12, 336);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(513, 75);
             this.panel9.TabIndex = 5;
@@ -379,17 +371,18 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txTenLoaiSach.TabIndex = 0;
             this.txTenLoaiSach.Text = "TÊN LOẠI SÁCH";
             // 
-            // comboBox1
+            // cbTenLoaiSach
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(328, 28);
-            this.comboBox1.TabIndex = 5;
+            this.cbTenLoaiSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenLoaiSach.FormattingEnabled = true;
+            this.cbTenLoaiSach.Location = new System.Drawing.Point(182, 23);
+            this.cbTenLoaiSach.Name = "cbTenLoaiSach";
+            this.cbTenLoaiSach.Size = new System.Drawing.Size(328, 28);
+            this.cbTenLoaiSach.TabIndex = 5;
             // 
             // fThoat
             // 
-            this.fThoat.Location = new System.Drawing.Point(405, 909);
+            this.fThoat.Location = new System.Drawing.Point(401, 833);
             this.fThoat.Name = "fThoat";
             this.fThoat.Size = new System.Drawing.Size(121, 29);
             this.fThoat.TabIndex = 11;
@@ -399,56 +392,31 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bThem
             // 
-            this.bThem.Location = new System.Drawing.Point(12, 909);
+            this.bThem.Location = new System.Drawing.Point(12, 833);
             this.bThem.Name = "bThem";
             this.bThem.Size = new System.Drawing.Size(185, 29);
             this.bThem.TabIndex = 12;
             this.bThem.Text = "THÊM";
             this.bThem.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.txbTenTacGia);
-            this.panel10.Controls.Add(this.txTenTacGia);
-            this.panel10.Location = new System.Drawing.Point(12, 255);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(513, 75);
-            this.panel10.TabIndex = 5;
-            // 
-            // txbTenTacGia
-            // 
-            this.txbTenTacGia.Location = new System.Drawing.Point(182, 24);
-            this.txbTenTacGia.Name = "txbTenTacGia";
-            this.txbTenTacGia.ReadOnly = true;
-            this.txbTenTacGia.Size = new System.Drawing.Size(328, 27);
-            this.txbTenTacGia.TabIndex = 2;
-            // 
-            // txTenTacGia
-            // 
-            this.txTenTacGia.AutoSize = true;
-            this.txTenTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenTacGia.Location = new System.Drawing.Point(3, 28);
-            this.txTenTacGia.Name = "txTenTacGia";
-            this.txTenTacGia.Size = new System.Drawing.Size(134, 23);
-            this.txTenTacGia.TabIndex = 0;
-            this.txTenTacGia.Text = "TÊN TÁC GIẢ";
+            this.bThem.Click += new System.EventHandler(this.bThem_Click);
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.comboBox3);
+            this.panel12.Controls.Add(this.cbTenNXB);
             this.panel12.Controls.Add(this.label3);
-            this.panel12.Location = new System.Drawing.Point(12, 498);
+            this.panel12.Location = new System.Drawing.Point(12, 417);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(514, 75);
             this.panel12.TabIndex = 13;
             // 
-            // comboBox3
+            // cbTenNXB
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(182, 23);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(328, 28);
-            this.comboBox3.TabIndex = 6;
+            this.cbTenNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenNXB.FormattingEnabled = true;
+            this.cbTenNXB.Location = new System.Drawing.Point(182, 23);
+            this.cbTenNXB.Name = "cbTenNXB";
+            this.cbTenNXB.Size = new System.Drawing.Size(328, 28);
+            this.cbTenNXB.TabIndex = 6;
             // 
             // label3
             // 
@@ -464,9 +432,8 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 950);
+            this.ClientSize = new System.Drawing.Size(538, 873);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.bThem);
             this.Controls.Add(this.fThoat);
@@ -478,8 +445,10 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fThemSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "THÊM SÁCH";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -503,8 +472,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.ResumeLayout(false);
@@ -516,7 +483,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txbMaSach;
         private System.Windows.Forms.Label txMaSach;
-        private System.Windows.Forms.ComboBox cbMaTacGia;
+        private System.Windows.Forms.ComboBox cbTenTacGia;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txbTenSach;
         private System.Windows.Forms.Label label1;
@@ -524,7 +491,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Label txMaTacGia;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label txTenLinhVuc;
-        private System.Windows.Forms.ComboBox cbMaLinhVuc;
+        private System.Windows.Forms.ComboBox cbTenLinhVuc;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.NumericUpDown numericUpDownGiaMua;
         private System.Windows.Forms.Label txGiaMua;
@@ -538,18 +505,15 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.DateTimePicker dateTimePicker_NamXuatBan;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label txTenLoaiSach;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTenLoaiSach;
         private System.Windows.Forms.NumericUpDown numericUpDownLanTaiBan;
         private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.Button bThem;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox txbTenTacGia;
-        private System.Windows.Forms.Label txTenTacGia;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label txTenNXB;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbTenNXB;
         private System.Windows.Forms.Label label3;
     }
 }

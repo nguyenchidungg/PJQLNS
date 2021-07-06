@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,20 @@ namespace Giao_dien_quan_ly_thu_vien
         public fXoaHD()
         {
             InitializeComponent();
+            cbMaHD_SelectedIndexChanged();
         }
 
         private void fThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbMaHD_SelectedIndexChanged()
+        {
+            string query = "Select MAHOADON from HOADON";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            this.cbMaHD.DataSource = data;
+            this.cbMaHD.DisplayMember = "MAHOADON";
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Giao_dien_quan_ly_thu_vien.DAO
         private DataProvider() { }
         
 
-        private string connectionSTR = @"Data Source=.\sqlexpress;Integrated Security=True";
+        private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=QLNS;Integrated Security=True";
 
 
         public DataTable ExecuteQuery(string query, object[] paramater = null)
@@ -108,6 +108,36 @@ namespace Giao_dien_quan_ly_thu_vien.DAO
                 }
 
                 data = command.ExecuteScalar();
+                connection.Close();
+            }
+            return data;
+        }
+
+
+        public DataSet ExecuteQueryList(string query, object[] paramater = null)
+        {
+            DataSet data = new DataSet();
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+
+                if (paramater != null)
+                {
+                    string[] lisrPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in lisrPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, paramater[i]);
+                            i++;
+                        }
+                    }
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
                 connection.Close();
             }
             return data;
