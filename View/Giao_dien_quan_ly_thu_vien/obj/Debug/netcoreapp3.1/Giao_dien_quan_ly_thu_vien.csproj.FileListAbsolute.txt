@@ -42,3 +42,5 @@ C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vi
 C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
 C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
 C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.genruntimeconfig.cache
+C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\USER\OneDrive\Tài liệu\GitHub\PJQLNS\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\itextsharp.dll

@@ -165,7 +165,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void fViewTong_Load()
         {
             DateTime tg = DateTime.Now;
-            txTime.Text = tg.ToString("dd/MMM/yyyy");
+            txTime.Text = tg.ToString("dddd, dd/MMM/yyyy");
             string query = "Select USERNAME From TAIKHOAN";
             object data = DataProvider.Instance.ExecuteScalar(query);
             txbUser.Text = data.ToString();

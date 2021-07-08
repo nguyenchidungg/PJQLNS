@@ -26,12 +26,10 @@ namespace Giao_dien_quan_ly_thu_vien
 
             if (Login(username, password))
             {
-                //Khi ấn đăng nhập thì hiện ra giao diện ViewTong
                 fViewTong f = new fViewTong();
-                this.Hide(); // ẩn đăng nhập
-                //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
+                this.Hide(); 
                 f.ShowDialog();
-                this.Show(); // hiện đăng nhập
+                this.Show();
             }
             else
             {
