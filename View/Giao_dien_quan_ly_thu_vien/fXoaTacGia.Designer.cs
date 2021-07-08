@@ -48,7 +48,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.bXoaTG.Location = new System.Drawing.Point(12, 383);
             this.bXoaTG.Name = "bXoaTG";
-            this.bXoaTG.Size = new System.Drawing.Size(241, 29);
+            this.bXoaTG.Size = new System.Drawing.Size(213, 29);
             this.bXoaTG.TabIndex = 20;
             this.bXoaTG.Text = "XÓA TÁC GIẢ";
             this.bXoaTG.UseVisualStyleBackColor = true;

@@ -47,11 +47,15 @@ namespace Giao_dien_quan_ly_thu_vien
             this.KhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NhaxuatbanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txUser = new System.Windows.Forms.Label();
+            this.txbUser = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.txDoanhthu = new System.Windows.Forms.Label();
+            this.txbDoanhThu = new System.Windows.Forms.TextBox();
+            this.txTime = new System.Windows.Forms.Label();
+            this.txSLKhach = new System.Windows.Forms.Label();
+            this.txbSLKhach = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,7 +73,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.ThongkeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1150, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1227, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,21 +158,21 @@ namespace Giao_dien_quan_ly_thu_vien
             // ThemTGToolStripMenuItem
             // 
             this.ThemTGToolStripMenuItem.Name = "ThemTGToolStripMenuItem";
-            this.ThemTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ThemTGToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.ThemTGToolStripMenuItem.Text = "THÊM TÁC GIẢ";
             this.ThemTGToolStripMenuItem.Click += new System.EventHandler(this.ThemTGToolStripMenuItem_Click);
             // 
             // XoaTGToolStripMenuItem
             // 
             this.XoaTGToolStripMenuItem.Name = "XoaTGToolStripMenuItem";
-            this.XoaTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.XoaTGToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.XoaTGToolStripMenuItem.Text = "XÓA TÁC GIẢ";
             this.XoaTGToolStripMenuItem.Click += new System.EventHandler(this.XoaTGToolStripMenuItem_Click);
             // 
             // SuaTGToolStripMenuItem
             // 
             this.SuaTGToolStripMenuItem.Name = "SuaTGToolStripMenuItem";
-            this.SuaTGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.SuaTGToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.SuaTGToolStripMenuItem.Text = "SỬA TÁC GIẢ";
             this.SuaTGToolStripMenuItem.Click += new System.EventHandler(this.SuaTGToolStripMenuItem_Click);
             // 
@@ -200,38 +204,110 @@ namespace Giao_dien_quan_ly_thu_vien
             this.ThongkeToolStripMenuItem.Text = "THỐNG KÊ";
             this.ThongkeToolStripMenuItem.Click += new System.EventHandler(this.ThongkeToolStripMenuItem_Click);
             // 
-            // panel1
+            // txUser
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(12, 31);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1126, 477);
-            this.panel1.TabIndex = 1;
+            this.txUser.AutoSize = true;
+            this.txUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txUser.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txUser.Location = new System.Drawing.Point(941, 28);
+            this.txUser.Name = "txUser";
+            this.txUser.Size = new System.Drawing.Size(92, 20);
+            this.txUser.TabIndex = 2;
+            this.txUser.Text = "Người dùng:";
             // 
-            // dataGridView1
+            // txbUser
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1126, 477);
-            this.dataGridView1.TabIndex = 0;
+            this.txbUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txbUser.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txbUser.Location = new System.Drawing.Point(1051, 28);
+            this.txbUser.Name = "txbUser";
+            this.txbUser.ReadOnly = true;
+            this.txbUser.Size = new System.Drawing.Size(110, 20);
+            this.txbUser.TabIndex = 3;
+            // 
+            // listView1
+            // 
+            this.listView1.BackColor = System.Drawing.Color.White;
+            this.listView1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.listView1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(12, 58);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(1203, 419);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // txDoanhthu
+            // 
+            this.txDoanhthu.AutoSize = true;
+            this.txDoanhthu.Font = new System.Drawing.Font("Segoe UI", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.txDoanhthu.Location = new System.Drawing.Point(765, 493);
+            this.txDoanhthu.Name = "txDoanhthu";
+            this.txDoanhthu.Size = new System.Drawing.Size(181, 17);
+            this.txDoanhthu.TabIndex = 6;
+            this.txDoanhthu.Text = "DOANH THU TRONG NGÀY:";
+            // 
+            // txbDoanhThu
+            // 
+            this.txbDoanhThu.BackColor = System.Drawing.SystemColors.Control;
+            this.txbDoanhThu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbDoanhThu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbDoanhThu.Location = new System.Drawing.Point(952, 489);
+            this.txbDoanhThu.Name = "txbDoanhThu";
+            this.txbDoanhThu.Size = new System.Drawing.Size(263, 23);
+            this.txbDoanhThu.TabIndex = 7;
+            // 
+            // txTime
+            // 
+            this.txTime.AutoSize = true;
+            this.txTime.Location = new System.Drawing.Point(12, 491);
+            this.txTime.Name = "txTime";
+            this.txTime.Size = new System.Drawing.Size(246, 20);
+            this.txTime.TabIndex = 4;
+            this.txTime.Text = "Thứ xxxx, ngày yy, tháng zz, năm tttt";
+            // 
+            // txSLKhach
+            // 
+            this.txSLKhach.AutoSize = true;
+            this.txSLKhach.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.txSLKhach.Location = new System.Drawing.Point(362, 491);
+            this.txSLKhach.Name = "txSLKhach";
+            this.txSLKhach.Size = new System.Drawing.Size(157, 20);
+            this.txSLKhach.TabIndex = 8;
+            this.txSLKhach.Text = "SL khách trong ngày:";
+            // 
+            // txbSLKhach
+            // 
+            this.txbSLKhach.BackColor = System.Drawing.SystemColors.Control;
+            this.txbSLKhach.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbSLKhach.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSLKhach.Location = new System.Drawing.Point(525, 489);
+            this.txbSLKhach.Name = "txbSLKhach";
+            this.txbSLKhach.Size = new System.Drawing.Size(234, 23);
+            this.txbSLKhach.TabIndex = 9;
             // 
             // fViewTong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 520);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1227, 520);
+            this.Controls.Add(this.txbSLKhach);
+            this.Controls.Add(this.txSLKhach);
+            this.Controls.Add(this.txbDoanhThu);
+            this.Controls.Add(this.txDoanhthu);
+            this.Controls.Add(this.txTime);
+            this.Controls.Add(this.txbUser);
+            this.Controls.Add(this.txUser);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fViewTong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "QUẢN LÍ NHÀ SÁCH";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,8 +324,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.ToolStripMenuItem HoadonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CapnhapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DangxuatToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripMenuItem ThemsachToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem XoasachToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SuasachToolStripMenuItem;
@@ -259,5 +333,13 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.ToolStripMenuItem ThemTGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem XoaTGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SuaTGToolStripMenuItem;
+        private System.Windows.Forms.Label txUser;
+        private System.Windows.Forms.TextBox txbUser;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label txDoanhthu;
+        private System.Windows.Forms.TextBox txbDoanhThu;
+        private System.Windows.Forms.Label txTime;
+        private System.Windows.Forms.Label txSLKhach;
+        private System.Windows.Forms.TextBox txbSLKhach;
     }
 }

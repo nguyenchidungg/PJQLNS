@@ -13,7 +13,6 @@ namespace Giao_dien_quan_ly_thu_vien
     {
         int bChonHD = 0;
         string mahd;
-        int tong = 0;
         public fHoaDon()
         {
             InitializeComponent();
@@ -104,7 +103,10 @@ namespace Giao_dien_quan_ly_thu_vien
             foreach (ListViewItem item in this.listView1.Items)
             {
                 if (item.Checked)
+                {
                     count++;
+                    txbTenKhachHang.Text = item.SubItems[1].Text;
+                }
             }
 
             if (count == 1)
@@ -118,7 +120,6 @@ namespace Giao_dien_quan_ly_thu_vien
                     }
 
                 }
-
                 listView2_SelectedIndexChanged();
             }
             else if (count == 0)
@@ -129,7 +130,7 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 MessageBox.Show("KHÔNG THỂ XEM CHI TIẾT CÙNG LÚC NHIỀU HÓA ĐƠN!", "THÔNG BÁO");
             }
-
+            listView1_SelectedIndexChanged();
         }
 
         private void listView2_SelectedIndexChanged()
@@ -184,6 +185,8 @@ namespace Giao_dien_quan_ly_thu_vien
                         {
                             count++;
                             string Ma = item.Text;
+                            string query0 = "Delete From CHITIETHOADON Where MAHOADON = '" + Ma + "'";
+                            DataTable data0 = DataProvider.Instance.ExecuteQuery(query0);
                             string query = "Delete From HOADON Where MAHOADON = '" + Ma + "'";
                             DataTable data = DataProvider.Instance.ExecuteQuery(query);
                             item.Remove();
@@ -204,73 +207,65 @@ namespace Giao_dien_quan_ly_thu_vien
         }
 
 
-
+        int tong=0;
         private void bChonSach_Click(object sender, EventArgs e)
         {
             if (txbTenKH.Text == "")
             {
                 MessageBox.Show("NHẬP TÊN KHÁCH HÀNG!", "THÔNG BÁO");
+                txbTenKH.ReadOnly = false;
             }
             else
             {
-                int tien = 0;
+                txbTenKH.ReadOnly = true;
+                int dem = 0;
                 foreach (ListViewItem item in this.listView3.Items)
                 {
                     if (item.Checked)
                     {
-                        tien = Convert.ToInt32(item.SubItems[2].Text);
+                        dem++;
                     }
                 }
 
-                try
+                if (dem == 1)
                 {
-                    tong = tong + Convert.ToInt32(numericUpDownSoLuong.Text) * tien;
-                    string query3 = "Insert Into HOADON Values ('" + txbMaHD.Text + "', '" + txbTenKH.Text + "', '" + dateTimePicker_NgayLap.Text +
-                        "', " + tong + ")";
-                    DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
-                    listView1_SelectedIndexChanged();
-                    listView3_SelectedIndexChanged();
-                    numericUpDownSoLuong.Value = 1;
-                }
-                catch
-                {
-                    tong = tong + Convert.ToInt32(numericUpDownSoLuong.Text) * tien;
-                    string query3b = "Update HOADON SET TONGTIEN = " + tong + " Where MAHOADON = '" + txbMaHD.Text + "'";
-                    DataTable data3b = DataProvider.Instance.ExecuteQuery(query3b);
-                    listView1_SelectedIndexChanged();
-                    listView3_SelectedIndexChanged();
-                    numericUpDownSoLuong.Value = 1;
-                }
-            }
-
-            int count = 0;
-            foreach (ListViewItem item in this.listView3.Items)
-            {
-                if (item.Checked)
-                    count++;
-            }
-
-            if (count == 1)
-            {
-                foreach (ListViewItem item in this.listView3.Items)
-                {
-                    if (item.Checked == true)
-                    { 
-                        string query4 = "Insert Into CHITIETHOADON Values ('" + txbMaHD.Text + "', '" + item.SubItems[0].Text +
-                        "', " + numericUpDownSoLuong.Text + ", " + item.SubItems[2].Text + ", " +
-                        Convert.ToInt32(numericUpDownSoLuong.Text) * Convert.ToInt32(item.SubItems[2].Text) + ")";
-                        DataTable data4 = DataProvider.Instance.ExecuteQuery(query4);
-                        MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
+                    int hientai = 0;
+                    foreach (ListViewItem item in this.listView3.Items)
+                    {
+                        if (item.Checked == true)
+                        {
+                            hientai = Convert.ToInt32(item.SubItems[2].Text) * Convert.ToInt32(numericUpDownSoLuong.Value);
+                            try
+                            {
+                                string query1 = "Insert into HOADON values ('" + txbMaHD.Text + "', '" + txbTenKH.Text + "', '" +
+                                    dateTimePicker_NgayLap.Text + "', " + hientai + ")";
+                                DataTable data1 = DataProvider.Instance.ExecuteQuery(query1);
+                                tong = tong + hientai;
+                            }
+                            catch
+                            {
+                                tong = tong + hientai;
+                                string query2 = "Update HOADON set TONGTIEN = " + tong + " where MAHOADON = '" + txbMaHD.Text + "'";
+                                DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
+                            }
+                            MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
+                            string query3 = "Insert into CHITIETHOADON values ('" + txbMaHD.Text + "', '" + item.SubItems[0].Text + "', '"
+                                + numericUpDownSoLuong.Value + "', '" + item.SubItems[2].Text + "', " + hientai + ")";
+                            DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
+                            listView1_SelectedIndexChanged();
+                        }
                     }
+                    numericUpDownSoLuong.Value = 1;
+                    listView3_SelectedIndexChanged();
                 }
-            }
-            else if (count == 0)
-            {
-                MessageBox.Show("CHƯA CHỌN SÁCH NÀO!", "THÔNG BÁO");
-            }
-            else
-            {
-                MessageBox.Show("CHỌN TỪNG SÁCH VÀ NHẬP SỐ LƯỢNG!", "THÔNG BÁO");
+                else if (dem == 0)
+                {
+                    MessageBox.Show("CHƯA CHỌN SÁCH!", "THÔNG BÁO");
+                }    
+                else
+                {
+                    MessageBox.Show("CHỌN TỪNG SÁCH VÀ NHẬP SỐ LƯỢNG!", "THÔNG BÁO");
+                }
             }
         }
 
@@ -280,13 +275,14 @@ namespace Giao_dien_quan_ly_thu_vien
                 "ON SACH.MATG = TACGIA.MATG";
             DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
 
+            this.listView3.Clear();
             this.listView3.Items.Clear();
             this.listView3.View = View.Details;
             this.listView3.Columns.Add("MÃ SÁCH", 100);
-            this.listView3.Columns.Add("TÊN SÁCH", 200);
+            this.listView3.Columns.Add("TÊN SÁCH", 240);
             this.listView3.Columns.Add("GIÁ BÌA", 150);
             this.listView3.Columns.Add("MÃ TÁC GIẢ", 100);
-            this.listView3.Columns.Add("TÊN TÁC GIẢ", 150);
+            this.listView3.Columns.Add("TÊN TÁC GIẢ", 180);
             this.listView3.Columns.Add("TÊN LĨNH VỰC", 150);
             this.listView3.Columns.Add("TÊN LOẠI SÁCH", 150);
             this.listView3.GridLines = true;
@@ -309,12 +305,18 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void bThemHD_Click(object sender, EventArgs e)
         {
-            listView1_SelectedIndexChanged();
-            listView3_SelectedIndexChanged();
-            txbMaHD_TextChanged();
-            txbTenKH.Text = "";
-            dateTimePicker_NgayLap.Text = DateTime.Now.ToString();
-            MessageBox.Show("HOÀN THÀNH HÓA ĐƠN!", "THÔNG BÁO");
+                listView1_SelectedIndexChanged();
+                listView3_SelectedIndexChanged();
+                txbMaHD_TextChanged();
+                txbTenKH.Text = "";
+                dateTimePicker_NgayLap.Text = DateTime.Now.ToString();
+                tong = 0;
+                txbTenKH.ReadOnly = false;
+            if (txbTenKH.Text != "")
+            {
+                MessageBox.Show("HOÀN THÀNH HÓA ĐƠN!", "THÔNG BÁO");
+            }
+            else { }
         }
 
         private void fThoat_Click(object sender, EventArgs e)

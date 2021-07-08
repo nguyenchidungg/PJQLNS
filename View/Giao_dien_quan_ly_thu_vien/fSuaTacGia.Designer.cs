@@ -32,30 +32,22 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbMaTacGia = new System.Windows.Forms.TextBox();
             this.txMaTacGia = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.txbTenTacGia = new System.Windows.Forms.TextBox();
             this.txTenTacGia = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox_QueQuan = new System.Windows.Forms.CheckBox();
             this.txbQueQuan = new System.Windows.Forms.TextBox();
             this.txQueQuan = new System.Windows.Forms.Label();
             this.bbLuu = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.checkBox_NgaySinh = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txbNgaySinh = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.checkBox_NgayMat = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NgayMat = new System.Windows.Forms.DateTimePicker();
             this.txNgayMat = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.bChon = new System.Windows.Forms.Button();
-            this.checkBox_QueQuan = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -69,10 +61,10 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // txbMaTacGia
             // 
-            this.txbMaTacGia.Location = new System.Drawing.Point(182, 24);
+            this.txbMaTacGia.Location = new System.Drawing.Point(145, 24);
             this.txbMaTacGia.Name = "txbMaTacGia";
             this.txbMaTacGia.ReadOnly = true;
-            this.txbMaTacGia.Size = new System.Drawing.Size(328, 27);
+            this.txbMaTacGia.Size = new System.Drawing.Size(365, 27);
             this.txbMaTacGia.TabIndex = 2;
             // 
             // txMaTacGia
@@ -85,54 +77,46 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txMaTacGia.TabIndex = 0;
             this.txMaTacGia.Text = "MÃ TÁC GIẢ";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txbTenTacGia);
-            this.panel1.Controls.Add(this.txTenTacGia);
-            this.panel1.Location = new System.Drawing.Point(588, 93);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(513, 75);
-            this.panel1.TabIndex = 5;
-            // 
             // txbTenTacGia
             // 
-            this.txbTenTacGia.Location = new System.Drawing.Point(182, 24);
+            this.txbTenTacGia.Location = new System.Drawing.Point(733, 86);
             this.txbTenTacGia.Name = "txbTenTacGia";
-            this.txbTenTacGia.Size = new System.Drawing.Size(328, 27);
+            this.txbTenTacGia.Size = new System.Drawing.Size(365, 27);
             this.txbTenTacGia.TabIndex = 1;
             // 
             // txTenTacGia
             // 
             this.txTenTacGia.AutoSize = true;
             this.txTenTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenTacGia.Location = new System.Drawing.Point(3, 28);
+            this.txTenTacGia.Location = new System.Drawing.Point(591, 90);
             this.txTenTacGia.Name = "txTenTacGia";
             this.txTenTacGia.Size = new System.Drawing.Size(134, 23);
             this.txTenTacGia.TabIndex = 0;
             this.txTenTacGia.Text = "TÊN TÁC GIẢ";
             // 
-            // panel3
+            // checkBox_QueQuan
             // 
-            this.panel3.Controls.Add(this.checkBox_QueQuan);
-            this.panel3.Controls.Add(this.txbQueQuan);
-            this.panel3.Controls.Add(this.txQueQuan);
-            this.panel3.Location = new System.Drawing.Point(588, 174);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(513, 75);
-            this.panel3.TabIndex = 6;
+            this.checkBox_QueQuan.AutoSize = true;
+            this.checkBox_QueQuan.Location = new System.Drawing.Point(1002, 142);
+            this.checkBox_QueQuan.Name = "checkBox_QueQuan";
+            this.checkBox_QueQuan.Size = new System.Drawing.Size(96, 24);
+            this.checkBox_QueQuan.TabIndex = 12;
+            this.checkBox_QueQuan.Text = "CHƯA RÕ";
+            this.checkBox_QueQuan.UseVisualStyleBackColor = true;
+            this.checkBox_QueQuan.CheckedChanged += new System.EventHandler(this.checkBox_QueQuan_CheckedChanged);
             // 
             // txbQueQuan
             // 
-            this.txbQueQuan.Location = new System.Drawing.Point(182, 24);
+            this.txbQueQuan.Location = new System.Drawing.Point(733, 139);
             this.txbQueQuan.Name = "txbQueQuan";
-            this.txbQueQuan.Size = new System.Drawing.Size(328, 27);
+            this.txbQueQuan.Size = new System.Drawing.Size(240, 27);
             this.txbQueQuan.TabIndex = 1;
             // 
             // txQueQuan
             // 
             this.txQueQuan.AutoSize = true;
             this.txQueQuan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txQueQuan.Location = new System.Drawing.Point(3, 28);
+            this.txQueQuan.Location = new System.Drawing.Point(591, 143);
             this.txQueQuan.Name = "txQueQuan";
             this.txQueQuan.Size = new System.Drawing.Size(113, 23);
             this.txQueQuan.TabIndex = 0;
@@ -140,7 +124,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bbLuu
             // 
-            this.bbLuu.Location = new System.Drawing.Point(588, 461);
+            this.bbLuu.Location = new System.Drawing.Point(12, 346);
             this.bbLuu.Name = "bbLuu";
             this.bbLuu.Size = new System.Drawing.Size(278, 29);
             this.bbLuu.TabIndex = 15;
@@ -150,7 +134,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // fThoat
             // 
-            this.fThoat.Location = new System.Drawing.Point(980, 461);
+            this.fThoat.Location = new System.Drawing.Point(980, 346);
             this.fThoat.Name = "fThoat";
             this.fThoat.Size = new System.Drawing.Size(121, 29);
             this.fThoat.TabIndex = 14;
@@ -158,20 +142,10 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.checkBox_NgaySinh);
-            this.panel8.Controls.Add(this.dateTimePicker_NgaySinh);
-            this.panel8.Controls.Add(this.txbNgaySinh);
-            this.panel8.Location = new System.Drawing.Point(588, 255);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(513, 87);
-            this.panel8.TabIndex = 16;
-            // 
             // checkBox_NgaySinh
             // 
             this.checkBox_NgaySinh.AutoSize = true;
-            this.checkBox_NgaySinh.Location = new System.Drawing.Point(182, 59);
+            this.checkBox_NgaySinh.Location = new System.Drawing.Point(1002, 199);
             this.checkBox_NgaySinh.Name = "checkBox_NgaySinh";
             this.checkBox_NgaySinh.Size = new System.Drawing.Size(96, 24);
             this.checkBox_NgaySinh.TabIndex = 10;
@@ -182,35 +156,25 @@ namespace Giao_dien_quan_ly_thu_vien
             // dateTimePicker_NgaySinh
             // 
             this.dateTimePicker_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_NgaySinh.Location = new System.Drawing.Point(182, 26);
+            this.dateTimePicker_NgaySinh.Location = new System.Drawing.Point(733, 195);
             this.dateTimePicker_NgaySinh.Name = "dateTimePicker_NgaySinh";
-            this.dateTimePicker_NgaySinh.Size = new System.Drawing.Size(328, 27);
+            this.dateTimePicker_NgaySinh.Size = new System.Drawing.Size(240, 27);
             this.dateTimePicker_NgaySinh.TabIndex = 9;
             // 
             // txbNgaySinh
             // 
             this.txbNgaySinh.AutoSize = true;
             this.txbNgaySinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbNgaySinh.Location = new System.Drawing.Point(3, 28);
+            this.txbNgaySinh.Location = new System.Drawing.Point(591, 200);
             this.txbNgaySinh.Name = "txbNgaySinh";
             this.txbNgaySinh.Size = new System.Drawing.Size(117, 23);
             this.txbNgaySinh.TabIndex = 0;
             this.txbNgaySinh.Text = "NGÀY SINH";
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.checkBox_NgayMat);
-            this.panel4.Controls.Add(this.dateTimePicker_NgayMat);
-            this.panel4.Controls.Add(this.txNgayMat);
-            this.panel4.Location = new System.Drawing.Point(588, 348);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(513, 89);
-            this.panel4.TabIndex = 12;
-            // 
             // checkBox_NgayMat
             // 
             this.checkBox_NgayMat.AutoSize = true;
-            this.checkBox_NgayMat.Location = new System.Drawing.Point(182, 59);
+            this.checkBox_NgayMat.Location = new System.Drawing.Point(1002, 252);
             this.checkBox_NgayMat.Name = "checkBox_NgayMat";
             this.checkBox_NgayMat.Size = new System.Drawing.Size(96, 24);
             this.checkBox_NgayMat.TabIndex = 11;
@@ -221,16 +185,16 @@ namespace Giao_dien_quan_ly_thu_vien
             // dateTimePicker_NgayMat
             // 
             this.dateTimePicker_NgayMat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_NgayMat.Location = new System.Drawing.Point(182, 26);
+            this.dateTimePicker_NgayMat.Location = new System.Drawing.Point(733, 249);
             this.dateTimePicker_NgayMat.Name = "dateTimePicker_NgayMat";
-            this.dateTimePicker_NgayMat.Size = new System.Drawing.Size(328, 27);
+            this.dateTimePicker_NgayMat.Size = new System.Drawing.Size(240, 27);
             this.dateTimePicker_NgayMat.TabIndex = 9;
             // 
             // txNgayMat
             // 
             this.txNgayMat.AutoSize = true;
             this.txNgayMat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txNgayMat.Location = new System.Drawing.Point(3, 28);
+            this.txNgayMat.Location = new System.Drawing.Point(591, 253);
             this.txNgayMat.Name = "txNgayMat";
             this.txNgayMat.Size = new System.Drawing.Size(114, 23);
             this.txNgayMat.TabIndex = 0;
@@ -241,13 +205,13 @@ namespace Giao_dien_quan_ly_thu_vien
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(564, 425);
+            this.listView1.Size = new System.Drawing.Size(564, 263);
             this.listView1.TabIndex = 17;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // bChon
             // 
-            this.bChon.Location = new System.Drawing.Point(12, 461);
+            this.bChon.Location = new System.Drawing.Point(12, 281);
             this.bChon.Name = "bChon";
             this.bChon.Size = new System.Drawing.Size(130, 29);
             this.bChon.TabIndex = 18;
@@ -255,45 +219,34 @@ namespace Giao_dien_quan_ly_thu_vien
             this.bChon.UseVisualStyleBackColor = true;
             this.bChon.Click += new System.EventHandler(this.bChon_Click);
             // 
-            // checkBox_QueQuan
-            // 
-            this.checkBox_QueQuan.AutoSize = true;
-            this.checkBox_QueQuan.Location = new System.Drawing.Point(182, 51);
-            this.checkBox_QueQuan.Name = "checkBox_QueQuan";
-            this.checkBox_QueQuan.Size = new System.Drawing.Size(96, 24);
-            this.checkBox_QueQuan.TabIndex = 12;
-            this.checkBox_QueQuan.Text = "CHƯA RÕ";
-            this.checkBox_QueQuan.UseVisualStyleBackColor = true;
-            this.checkBox_QueQuan.CheckedChanged += new System.EventHandler(this.checkBox_QueQuan_CheckedChanged);
-            // 
             // fSuaTacGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 502);
+            this.ClientSize = new System.Drawing.Size(1113, 383);
+            this.Controls.Add(this.checkBox_NgayMat);
+            this.Controls.Add(this.checkBox_NgaySinh);
+            this.Controls.Add(this.dateTimePicker_NgayMat);
+            this.Controls.Add(this.checkBox_QueQuan);
+            this.Controls.Add(this.txNgayMat);
+            this.Controls.Add(this.dateTimePicker_NgaySinh);
+            this.Controls.Add(this.txbTenTacGia);
+            this.Controls.Add(this.txbNgaySinh);
+            this.Controls.Add(this.txbQueQuan);
             this.Controls.Add(this.bChon);
+            this.Controls.Add(this.txQueQuan);
+            this.Controls.Add(this.txTenTacGia);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.fThoat);
             this.Controls.Add(this.bbLuu);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fSuaTacGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -301,19 +254,15 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label txMaTacGia;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txbTenTacGia;
         private System.Windows.Forms.Label txTenTacGia;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txbQueQuan;
         private System.Windows.Forms.Label txQueQuan;
         private System.Windows.Forms.Button bbLuu;
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.CheckBox checkBox_NgaySinh;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NgaySinh;
         private System.Windows.Forms.Label txbNgaySinh;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.CheckBox checkBox_NgayMat;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NgayMat;
         private System.Windows.Forms.Label txNgayMat;

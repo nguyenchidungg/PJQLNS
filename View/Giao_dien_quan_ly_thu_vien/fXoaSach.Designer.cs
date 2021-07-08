@@ -40,7 +40,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bXoa
             // 
-            this.bXoa.Location = new System.Drawing.Point(7, 496);
+            this.bXoa.Location = new System.Drawing.Point(7, 389);
             this.bXoa.Name = "bXoa";
             this.bXoa.Size = new System.Drawing.Size(183, 29);
             this.bXoa.TabIndex = 13;
@@ -50,7 +50,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // fThoat
             // 
-            this.fThoat.Location = new System.Drawing.Point(640, 496);
+            this.fThoat.Location = new System.Drawing.Point(640, 389);
             this.fThoat.Name = "fThoat";
             this.fThoat.Size = new System.Drawing.Size(121, 29);
             this.fThoat.TabIndex = 14;
@@ -67,7 +67,7 @@ namespace Giao_dien_quan_ly_thu_vien
             listViewItem1});
             this.listView1.Location = new System.Drawing.Point(7, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(754, 486);
+            this.listView1.Size = new System.Drawing.Size(754, 379);
             this.listView1.TabIndex = 15;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -76,7 +76,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 537);
+            this.ClientSize = new System.Drawing.Size(766, 428);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.fThoat);
             this.Controls.Add(this.bXoa);

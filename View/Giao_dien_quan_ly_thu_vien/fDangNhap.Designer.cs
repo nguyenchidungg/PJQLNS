@@ -66,7 +66,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bDangNhap
             // 
-            this.bDangNhap.Location = new System.Drawing.Point(265, 162);
+            this.bDangNhap.Location = new System.Drawing.Point(185, 162);
             this.bDangNhap.Name = "bDangNhap";
             this.bDangNhap.Size = new System.Drawing.Size(121, 29);
             this.bDangNhap.TabIndex = 3;

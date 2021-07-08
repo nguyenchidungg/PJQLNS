@@ -43,7 +43,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbTenKH = new System.Windows.Forms.TextBox();
             this.txTenKH = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txSachDaMua = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dateTimePicker_NgayLap = new System.Windows.Forms.DateTimePicker();
             this.txNgayLap = new System.Windows.Forms.Label();
@@ -60,6 +59,9 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txNgayLap_Sua = new System.Windows.Forms.Label();
             this.bLuu = new System.Windows.Forms.Button();
             this.txSuaHD = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbTenKhachHang = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,7 +73,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // fThoat
             // 
-            this.fThoat.Location = new System.Drawing.Point(1239, 700);
+            this.fThoat.Location = new System.Drawing.Point(1239, 690);
             this.fThoat.Name = "fThoat";
             this.fThoat.Size = new System.Drawing.Size(198, 29);
             this.fThoat.TabIndex = 8;
@@ -81,17 +83,19 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bThemHD
             // 
-            this.bThemHD.Location = new System.Drawing.Point(260, 651);
+            this.bThemHD.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bThemHD.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bThemHD.Location = new System.Drawing.Point(1144, 580);
             this.bThemHD.Name = "bThemHD";
-            this.bThemHD.Size = new System.Drawing.Size(358, 78);
+            this.bThemHD.Size = new System.Drawing.Size(293, 65);
             this.bThemHD.TabIndex = 9;
             this.bThemHD.Text = "HOÀN THÀNH HÓA ĐƠN";
-            this.bThemHD.UseVisualStyleBackColor = true;
+            this.bThemHD.UseVisualStyleBackColor = false;
             this.bThemHD.Click += new System.EventHandler(this.bThemHD_Click);
             // 
             // bXoaHD
             // 
-            this.bXoaHD.Location = new System.Drawing.Point(494, 251);
+            this.bXoaHD.Location = new System.Drawing.Point(233, 251);
             this.bXoaHD.Name = "bXoaHD";
             this.bXoaHD.Size = new System.Drawing.Size(124, 29);
             this.bXoaHD.TabIndex = 10;
@@ -123,12 +127,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.bCTHD.BackColor = System.Drawing.SystemColors.Info;
             this.bCTHD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bCTHD.Location = new System.Drawing.Point(624, 151);
+            this.bCTHD.Location = new System.Drawing.Point(461, 251);
             this.bCTHD.Name = "bCTHD";
             this.bCTHD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bCTHD.Size = new System.Drawing.Size(64, 91);
+            this.bCTHD.Size = new System.Drawing.Size(157, 32);
             this.bCTHD.TabIndex = 27;
-            this.bCTHD.Text = "CHI TIẾT \r\nHÓA ĐƠN\r\n\r\n";
+            this.bCTHD.Text = "CHI TIẾT HÓA ĐƠN\r\n\r\n";
             this.bCTHD.UseVisualStyleBackColor = false;
             this.bCTHD.Click += new System.EventHandler(this.bCTHD_Click);
             // 
@@ -147,9 +151,9 @@ namespace Giao_dien_quan_ly_thu_vien
             this.listView2.BackColor = System.Drawing.SystemColors.Info;
             this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(694, 12);
+            this.listView2.Location = new System.Drawing.Point(655, 32);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(743, 230);
+            this.listView2.Size = new System.Drawing.Size(782, 210);
             this.listView2.TabIndex = 33;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -158,7 +162,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbMaHD.Location = new System.Drawing.Point(186, 8);
             this.txbMaHD.Name = "txbMaHD";
             this.txbMaHD.ReadOnly = true;
-            this.txbMaHD.Size = new System.Drawing.Size(238, 27);
+            this.txbMaHD.Size = new System.Drawing.Size(355, 27);
             this.txbMaHD.TabIndex = 36;
             // 
             // txMaSach
@@ -184,7 +188,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txbTenKH.Location = new System.Drawing.Point(186, 3);
             this.txbTenKH.Name = "txbTenKH";
-            this.txbTenKH.Size = new System.Drawing.Size(310, 27);
+            this.txbTenKH.Size = new System.Drawing.Size(355, 27);
             this.txbTenKH.TabIndex = 1;
             // 
             // txTenKH
@@ -206,16 +210,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel2.Size = new System.Drawing.Size(544, 39);
             this.panel2.TabIndex = 38;
             // 
-            // txSachDaMua
-            // 
-            this.txSachDaMua.AutoSize = true;
-            this.txSachDaMua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txSachDaMua.Location = new System.Drawing.Point(979, 364);
-            this.txSachDaMua.Name = "txSachDaMua";
-            this.txSachDaMua.Size = new System.Drawing.Size(180, 23);
-            this.txSachDaMua.TabIndex = 2;
-            this.txSachDaMua.Text = "* Danh sách Sách *";
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.dateTimePicker_NgayLap);
@@ -230,7 +224,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.dateTimePicker_NgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_NgayLap.Location = new System.Drawing.Point(186, 3);
             this.dateTimePicker_NgayLap.Name = "dateTimePicker_NgayLap";
-            this.dateTimePicker_NgayLap.Size = new System.Drawing.Size(239, 27);
+            this.dateTimePicker_NgayLap.Size = new System.Drawing.Size(197, 27);
             this.dateTimePicker_NgayLap.TabIndex = 9;
             // 
             // txNgayLap
@@ -245,9 +239,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bChonSach
             // 
-            this.bChonSach.Location = new System.Drawing.Point(1050, 629);
+            this.bChonSach.Location = new System.Drawing.Point(306, 3);
             this.bChonSach.Name = "bChonSach";
-            this.bChonSach.Size = new System.Drawing.Size(69, 29);
+            this.bChonSach.Size = new System.Drawing.Size(112, 29);
             this.bChonSach.TabIndex = 40;
             this.bChonSach.Text = "CHỌN";
             this.bChonSach.UseVisualStyleBackColor = true;
@@ -257,9 +251,10 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel5.Controls.Add(this.numericUpDownSoLuong);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(697, 624);
+            this.panel5.Controls.Add(this.bChonSach);
+            this.panel5.Location = new System.Drawing.Point(655, 584);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(337, 38);
+            this.panel5.Size = new System.Drawing.Size(418, 38);
             this.panel5.TabIndex = 41;
             // 
             // numericUpDownSoLuong
@@ -276,7 +271,7 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             this.numericUpDownSoLuong.Name = "numericUpDownSoLuong";
-            this.numericUpDownSoLuong.Size = new System.Drawing.Size(219, 27);
+            this.numericUpDownSoLuong.Size = new System.Drawing.Size(168, 27);
             this.numericUpDownSoLuong.TabIndex = 41;
             this.numericUpDownSoLuong.Value = new decimal(new int[] {
             1,
@@ -298,9 +293,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.listView3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(694, 390);
+            this.listView3.Location = new System.Drawing.Point(655, 351);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(743, 228);
+            this.listView3.Size = new System.Drawing.Size(782, 223);
             this.listView3.TabIndex = 42;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
@@ -310,14 +305,14 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel7.Controls.Add(this.txTenKH_Sua);
             this.panel7.Location = new System.Drawing.Point(74, 351);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(369, 32);
+            this.panel7.Size = new System.Drawing.Size(544, 32);
             this.panel7.TabIndex = 39;
             // 
             // txbTenKH_Sua
             // 
-            this.txbTenKH_Sua.Location = new System.Drawing.Point(117, 0);
+            this.txbTenKH_Sua.Location = new System.Drawing.Point(186, 2);
             this.txbTenKH_Sua.Name = "txbTenKH_Sua";
-            this.txbTenKH_Sua.Size = new System.Drawing.Size(252, 27);
+            this.txbTenKH_Sua.Size = new System.Drawing.Size(355, 27);
             this.txbTenKH_Sua.TabIndex = 1;
             // 
             // txTenKH_Sua
@@ -334,17 +329,18 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel6.Controls.Add(this.dateTimePicker_Sua);
             this.panel6.Controls.Add(this.txNgayLap_Sua);
+            this.panel6.Controls.Add(this.bLuu);
             this.panel6.Location = new System.Drawing.Point(71, 384);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(372, 42);
+            this.panel6.Size = new System.Drawing.Size(547, 42);
             this.panel6.TabIndex = 13;
             // 
             // dateTimePicker_Sua
             // 
             this.dateTimePicker_Sua.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_Sua.Location = new System.Drawing.Point(120, 5);
+            this.dateTimePicker_Sua.Location = new System.Drawing.Point(189, 5);
             this.dateTimePicker_Sua.Name = "dateTimePicker_Sua";
-            this.dateTimePicker_Sua.Size = new System.Drawing.Size(252, 27);
+            this.dateTimePicker_Sua.Size = new System.Drawing.Size(197, 27);
             this.dateTimePicker_Sua.TabIndex = 9;
             // 
             // txNgayLap_Sua
@@ -359,9 +355,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bLuu
             // 
-            this.bLuu.Location = new System.Drawing.Point(494, 390);
+            this.bLuu.Location = new System.Drawing.Point(420, 5);
             this.bLuu.Name = "bLuu";
-            this.bLuu.Size = new System.Drawing.Size(124, 29);
+            this.bLuu.Size = new System.Drawing.Size(124, 27);
             this.bLuu.TabIndex = 45;
             this.bLuu.Text = "LƯU";
             this.bLuu.UseVisualStyleBackColor = true;
@@ -377,18 +373,49 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txSuaHD.TabIndex = 46;
             this.txSuaHD.Text = "SỬA HÓA ĐƠN";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Location = new System.Drawing.Point(655, 334);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 24);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Chọn Sách";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(658, -2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Tên khách hàng:";
+            // 
+            // txbTenKhachHang
+            // 
+            this.txbTenKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbTenKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.txbTenKhachHang.Location = new System.Drawing.Point(778, -2);
+            this.txbTenKhachHang.Name = "txbTenKhachHang";
+            this.txbTenKhachHang.ReadOnly = true;
+            this.txbTenKhachHang.Size = new System.Drawing.Size(333, 20);
+            this.txbTenKhachHang.TabIndex = 49;
+            // 
             // fHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 741);
-            this.Controls.Add(this.txSachDaMua);
+            this.Controls.Add(this.txbTenKhachHang);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txSuaHD);
-            this.Controls.Add(this.bLuu);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.listView3);
-            this.Controls.Add(this.bChonSach);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -438,7 +465,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.TextBox txbTenKH;
         private System.Windows.Forms.Label txTenKH;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label txSachDaMua;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NgayLap;
         private System.Windows.Forms.Label txNgayLap;
@@ -455,5 +481,8 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Label txNgayLap_Sua;
         private System.Windows.Forms.Button bLuu;
         private System.Windows.Forms.Label txSuaHD;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbTenKhachHang;
     }
 }

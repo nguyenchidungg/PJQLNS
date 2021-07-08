@@ -66,11 +66,18 @@ namespace Giao_dien_quan_ly_thu_vien
                     {
                         if (item.Checked == true)
                         {
-                            count++;
-                            string Ma = item.Text;
-                            string query = "Delete From SACH Where MASACH = '" + Ma + "'";
-                            DataTable data = DataProvider.Instance.ExecuteQuery(query);
-                            item.Remove();
+                            try
+                            {
+                                count++;
+                                string Ma = item.Text;
+                                string query = "Delete From SACH Where MASACH = '" + Ma + "'";
+                                DataTable data = DataProvider.Instance.ExecuteQuery(query);
+                                item.Remove();
+                            }
+                            catch 
+                            {
+                                MessageBox.Show("KHÔNG THỂ XÓA!", "THÔNG BÁO");
+                            }
                         }
                     }
                 }
@@ -80,6 +87,5 @@ namespace Giao_dien_quan_ly_thu_vien
                 MessageBox.Show("KHÔNG CÓ GÌ ĐỂ XÓA!", "THÔNG BÁO");
             }
         }
-
     }
 }

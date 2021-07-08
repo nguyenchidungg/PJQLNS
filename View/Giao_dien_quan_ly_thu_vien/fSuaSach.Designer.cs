@@ -73,7 +73,6 @@ namespace Giao_dien_quan_ly_thu_vien
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGiaBia)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLanTaiBan)).BeginInit();
-            this.panel8.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,14 +82,14 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel1.Controls.Add(this.txbTenSach);
             this.panel1.Controls.Add(this.txTenSach);
-            this.panel1.Location = new System.Drawing.Point(6, 474);
+            this.panel1.Location = new System.Drawing.Point(9, 490);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 75);
+            this.panel1.Size = new System.Drawing.Size(461, 40);
             this.panel1.TabIndex = 4;
             // 
             // txbTenSach
             // 
-            this.txbTenSach.Location = new System.Drawing.Point(121, 28);
+            this.txbTenSach.Location = new System.Drawing.Point(121, 6);
             this.txbTenSach.Name = "txbTenSach";
             this.txbTenSach.Size = new System.Drawing.Size(328, 27);
             this.txbTenSach.TabIndex = 2;
@@ -99,7 +98,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txTenSach.AutoSize = true;
             this.txTenSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenSach.Location = new System.Drawing.Point(3, 28);
+            this.txTenSach.Location = new System.Drawing.Point(3, 10);
             this.txTenSach.Name = "txTenSach";
             this.txTenSach.Size = new System.Drawing.Size(107, 23);
             this.txTenSach.TabIndex = 0;
@@ -109,16 +108,16 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel4.Controls.Add(this.txTenLinhVuc);
             this.panel4.Controls.Add(this.cbTenLinhVuc);
-            this.panel4.Location = new System.Drawing.Point(6, 660);
+            this.panel4.Location = new System.Drawing.Point(9, 578);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(461, 75);
+            this.panel4.Size = new System.Drawing.Size(461, 40);
             this.panel4.TabIndex = 6;
             // 
             // txTenLinhVuc
             // 
             this.txTenLinhVuc.AutoSize = true;
             this.txTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenLinhVuc.Location = new System.Drawing.Point(3, 28);
+            this.txTenLinhVuc.Location = new System.Drawing.Point(6, 11);
             this.txTenLinhVuc.Name = "txTenLinhVuc";
             this.txTenLinhVuc.Size = new System.Drawing.Size(103, 23);
             this.txTenLinhVuc.TabIndex = 0;
@@ -128,7 +127,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.cbTenLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenLinhVuc.FormattingEnabled = true;
-            this.cbTenLinhVuc.Location = new System.Drawing.Point(121, 24);
+            this.cbTenLinhVuc.Location = new System.Drawing.Point(121, 6);
             this.cbTenLinhVuc.Name = "cbTenLinhVuc";
             this.cbTenLinhVuc.Size = new System.Drawing.Size(328, 28);
             this.cbTenLinhVuc.TabIndex = 4;
@@ -137,16 +136,16 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel9.Controls.Add(this.txMaLoaiSach);
             this.panel9.Controls.Add(this.cbTenLoaiSach);
-            this.panel9.Location = new System.Drawing.Point(538, 381);
+            this.panel9.Location = new System.Drawing.Point(9, 624);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(461, 75);
+            this.panel9.Size = new System.Drawing.Size(461, 39);
             this.panel9.TabIndex = 7;
             // 
             // txMaLoaiSach
             // 
             this.txMaLoaiSach.AutoSize = true;
             this.txMaLoaiSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaLoaiSach.Location = new System.Drawing.Point(3, 28);
+            this.txMaLoaiSach.Location = new System.Drawing.Point(6, 9);
             this.txMaLoaiSach.Name = "txMaLoaiSach";
             this.txMaLoaiSach.Size = new System.Drawing.Size(115, 23);
             this.txMaLoaiSach.TabIndex = 0;
@@ -156,7 +155,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.cbTenLoaiSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenLoaiSach.FormattingEnabled = true;
-            this.cbTenLoaiSach.Location = new System.Drawing.Point(121, 23);
+            this.cbTenLoaiSach.Location = new System.Drawing.Point(121, 4);
             this.cbTenLoaiSach.Name = "cbTenLoaiSach";
             this.cbTenLoaiSach.Size = new System.Drawing.Size(328, 28);
             this.cbTenLoaiSach.TabIndex = 5;
@@ -165,14 +164,14 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel5.Controls.Add(this.numericUpDownGiaMua);
             this.panel5.Controls.Add(this.txGiaMua);
-            this.panel5.Location = new System.Drawing.Point(538, 567);
+            this.panel5.Location = new System.Drawing.Point(507, 490);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 75);
+            this.panel5.Size = new System.Drawing.Size(460, 40);
             this.panel5.TabIndex = 8;
             // 
             // numericUpDownGiaMua
             // 
-            this.numericUpDownGiaMua.Location = new System.Drawing.Point(121, 24);
+            this.numericUpDownGiaMua.Location = new System.Drawing.Point(121, 6);
             this.numericUpDownGiaMua.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -196,7 +195,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txGiaMua.AutoSize = true;
             this.txGiaMua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txGiaMua.Location = new System.Drawing.Point(3, 28);
+            this.txGiaMua.Location = new System.Drawing.Point(3, 6);
             this.txGiaMua.Name = "txGiaMua";
             this.txGiaMua.Size = new System.Drawing.Size(94, 23);
             this.txGiaMua.TabIndex = 0;
@@ -206,14 +205,14 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel7.Controls.Add(this.numericUpDownGiaBia);
             this.panel7.Controls.Add(this.txGiaBia);
-            this.panel7.Location = new System.Drawing.Point(538, 660);
+            this.panel7.Location = new System.Drawing.Point(507, 536);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(460, 75);
+            this.panel7.Size = new System.Drawing.Size(460, 36);
             this.panel7.TabIndex = 10;
             // 
             // numericUpDownGiaBia
             // 
-            this.numericUpDownGiaBia.Location = new System.Drawing.Point(123, 24);
+            this.numericUpDownGiaBia.Location = new System.Drawing.Point(121, 4);
             this.numericUpDownGiaBia.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -237,7 +236,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txGiaBia.AutoSize = true;
             this.txGiaBia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txGiaBia.Location = new System.Drawing.Point(3, 28);
+            this.txGiaBia.Location = new System.Drawing.Point(2, 8);
             this.txGiaBia.Name = "txGiaBia";
             this.txGiaBia.Size = new System.Drawing.Size(83, 23);
             this.txGiaBia.TabIndex = 0;
@@ -247,23 +246,24 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel6.Controls.Add(this.numericUpDownLanTaiBan);
             this.panel6.Controls.Add(this.txLanTaiBan);
-            this.panel6.Location = new System.Drawing.Point(1061, 381);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Location = new System.Drawing.Point(506, 578);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(516, 75);
+            this.panel6.Size = new System.Drawing.Size(461, 40);
             this.panel6.TabIndex = 11;
             // 
             // numericUpDownLanTaiBan
             // 
-            this.numericUpDownLanTaiBan.Location = new System.Drawing.Point(176, 24);
+            this.numericUpDownLanTaiBan.Location = new System.Drawing.Point(196, 7);
             this.numericUpDownLanTaiBan.Name = "numericUpDownLanTaiBan";
-            this.numericUpDownLanTaiBan.Size = new System.Drawing.Size(328, 27);
+            this.numericUpDownLanTaiBan.Size = new System.Drawing.Size(254, 27);
             this.numericUpDownLanTaiBan.TabIndex = 8;
             // 
             // txLanTaiBan
             // 
             this.txLanTaiBan.AutoSize = true;
             this.txLanTaiBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txLanTaiBan.Location = new System.Drawing.Point(3, 28);
+            this.txLanTaiBan.Location = new System.Drawing.Point(4, 11);
             this.txLanTaiBan.Name = "txLanTaiBan";
             this.txLanTaiBan.Size = new System.Drawing.Size(129, 23);
             this.txLanTaiBan.TabIndex = 0;
@@ -271,9 +271,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.dateTimePicker_NamXuatBan);
-            this.panel8.Controls.Add(this.txNamXuatBan);
-            this.panel8.Location = new System.Drawing.Point(1061, 474);
+            this.panel8.Location = new System.Drawing.Point(4, 55);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(516, 75);
             this.panel8.TabIndex = 12;
@@ -281,16 +279,16 @@ namespace Giao_dien_quan_ly_thu_vien
             // dateTimePicker_NamXuatBan
             // 
             this.dateTimePicker_NamXuatBan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_NamXuatBan.Location = new System.Drawing.Point(176, 24);
+            this.dateTimePicker_NamXuatBan.Location = new System.Drawing.Point(702, 629);
             this.dateTimePicker_NamXuatBan.Name = "dateTimePicker_NamXuatBan";
-            this.dateTimePicker_NamXuatBan.Size = new System.Drawing.Size(328, 27);
+            this.dateTimePicker_NamXuatBan.Size = new System.Drawing.Size(254, 27);
             this.dateTimePicker_NamXuatBan.TabIndex = 9;
             // 
             // txNamXuatBan
             // 
             this.txNamXuatBan.AutoSize = true;
             this.txNamXuatBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txNamXuatBan.Location = new System.Drawing.Point(3, 28);
+            this.txNamXuatBan.Location = new System.Drawing.Point(510, 633);
             this.txNamXuatBan.Name = "txNamXuatBan";
             this.txNamXuatBan.Size = new System.Drawing.Size(155, 23);
             this.txNamXuatBan.TabIndex = 0;
@@ -298,7 +296,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // fThoat
             // 
-            this.fThoat.Location = new System.Drawing.Point(1392, 681);
+            this.fThoat.Location = new System.Drawing.Point(783, 705);
             this.fThoat.Name = "fThoat";
             this.fThoat.Size = new System.Drawing.Size(173, 29);
             this.fThoat.TabIndex = 13;
@@ -308,9 +306,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bbLuu
             // 
-            this.bbLuu.Location = new System.Drawing.Point(1061, 677);
+            this.bbLuu.Location = new System.Drawing.Point(9, 705);
             this.bbLuu.Name = "bbLuu";
-            this.bbLuu.Size = new System.Drawing.Size(217, 33);
+            this.bbLuu.Size = new System.Drawing.Size(217, 29);
             this.bbLuu.TabIndex = 14;
             this.bbLuu.Text = "LƯU";
             this.bbLuu.UseVisualStyleBackColor = true;
@@ -320,16 +318,16 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel12.Controls.Add(this.cbTenNXB);
             this.panel12.Controls.Add(this.txTenNXB);
-            this.panel12.Location = new System.Drawing.Point(537, 474);
+            this.panel12.Location = new System.Drawing.Point(506, 443);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(461, 75);
+            this.panel12.Size = new System.Drawing.Size(461, 41);
             this.panel12.TabIndex = 15;
             // 
             // cbTenNXB
             // 
             this.cbTenNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenNXB.FormattingEnabled = true;
-            this.cbTenNXB.Location = new System.Drawing.Point(121, 28);
+            this.cbTenNXB.Location = new System.Drawing.Point(122, 3);
             this.cbTenNXB.Name = "cbTenNXB";
             this.cbTenNXB.Size = new System.Drawing.Size(328, 28);
             this.cbTenNXB.TabIndex = 6;
@@ -338,7 +336,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txTenNXB.AutoSize = true;
             this.txTenNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenNXB.Location = new System.Drawing.Point(3, 28);
+            this.txTenNXB.Location = new System.Drawing.Point(3, 8);
             this.txTenNXB.Name = "txTenNXB";
             this.txTenNXB.Size = new System.Drawing.Size(93, 23);
             this.txTenNXB.TabIndex = 0;
@@ -349,7 +347,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(9, 9);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1568, 363);
+            this.listView1.Size = new System.Drawing.Size(958, 363);
             this.listView1.TabIndex = 16;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -357,7 +355,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.cbTenTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenTacGia.FormattingEnabled = true;
-            this.cbTenTacGia.Location = new System.Drawing.Point(121, 24);
+            this.cbTenTacGia.Location = new System.Drawing.Point(121, 3);
             this.cbTenTacGia.Name = "cbTenTacGia";
             this.cbTenTacGia.Size = new System.Drawing.Size(328, 28);
             this.cbTenTacGia.TabIndex = 3;
@@ -366,7 +364,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.txTenTacGia.AutoSize = true;
             this.txTenTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenTacGia.Location = new System.Drawing.Point(3, 28);
+            this.txTenTacGia.Location = new System.Drawing.Point(3, 8);
             this.txTenTacGia.Name = "txTenTacGia";
             this.txTenTacGia.Size = new System.Drawing.Size(90, 23);
             this.txTenTacGia.TabIndex = 0;
@@ -376,9 +374,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel3.Controls.Add(this.txTenTacGia);
             this.panel3.Controls.Add(this.cbTenTacGia);
-            this.panel3.Location = new System.Drawing.Point(6, 567);
+            this.panel3.Location = new System.Drawing.Point(9, 536);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(461, 75);
+            this.panel3.Size = new System.Drawing.Size(461, 36);
             this.panel3.TabIndex = 5;
             // 
             // NoteForUser
@@ -405,24 +403,24 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel2.Controls.Add(this.txbMaSach);
             this.panel2.Controls.Add(this.txMaSach);
-            this.panel2.Location = new System.Drawing.Point(197, 381);
+            this.panel2.Location = new System.Drawing.Point(9, 443);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 75);
+            this.panel2.Size = new System.Drawing.Size(461, 41);
             this.panel2.TabIndex = 18;
             // 
             // txbMaSach
             // 
-            this.txbMaSach.Location = new System.Drawing.Point(58, 23);
+            this.txbMaSach.Location = new System.Drawing.Point(121, 6);
             this.txbMaSach.Name = "txbMaSach";
             this.txbMaSach.ReadOnly = true;
-            this.txbMaSach.Size = new System.Drawing.Size(137, 27);
+            this.txbMaSach.Size = new System.Drawing.Size(328, 27);
             this.txbMaSach.TabIndex = 2;
             // 
             // txMaSach
             // 
             this.txMaSach.AutoSize = true;
             this.txMaSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaSach.Location = new System.Drawing.Point(78, 0);
+            this.txMaSach.Location = new System.Drawing.Point(3, 10);
             this.txMaSach.Name = "txMaSach";
             this.txMaSach.Size = new System.Drawing.Size(99, 23);
             this.txMaSach.TabIndex = 0;
@@ -432,22 +430,24 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1585, 746);
+            this.ClientSize = new System.Drawing.Size(977, 746);
+            this.Controls.Add(this.dateTimePicker_NamXuatBan);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txNamXuatBan);
             this.Controls.Add(this.bbChon);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.NoteForUser);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.bbLuu);
             this.Controls.Add(this.fThoat);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fSuaSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SỬA SÁCH";
@@ -466,8 +466,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLanTaiBan)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel3.ResumeLayout(false);

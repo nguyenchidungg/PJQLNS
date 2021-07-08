@@ -30,6 +30,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbMaHD = new System.Windows.Forms.ComboBox();
             this.txMaHD = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel8 = new System.Windows.Forms.Panel();
             this.dateTimePicker_NamXuatBan = new System.Windows.Forms.DateTimePicker();
             this.txNgayLap = new System.Windows.Forms.Label();
-            this.cbMaHD = new System.Windows.Forms.ComboBox();
             this.bLuu = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -60,6 +60,14 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 75);
             this.panel2.TabIndex = 3;
+            // 
+            // cbMaHD
+            // 
+            this.cbMaHD.FormattingEnabled = true;
+            this.cbMaHD.Location = new System.Drawing.Point(182, 23);
+            this.cbMaHD.Name = "cbMaHD";
+            this.cbMaHD.Size = new System.Drawing.Size(328, 28);
+            this.cbMaHD.TabIndex = 2;
             // 
             // txMaHD
             // 
@@ -170,14 +178,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txNgayLap.TabIndex = 0;
             this.txNgayLap.Text = "NGÀY LẬP";
             // 
-            // cbMaHD
-            // 
-            this.cbMaHD.FormattingEnabled = true;
-            this.cbMaHD.Location = new System.Drawing.Point(182, 23);
-            this.cbMaHD.Name = "cbMaHD";
-            this.cbMaHD.Size = new System.Drawing.Size(328, 28);
-            this.cbMaHD.TabIndex = 2;
-            // 
             // bLuu
             // 
             this.bLuu.Location = new System.Drawing.Point(12, 349);
@@ -208,8 +208,10 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fSuaHD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SỬA HÓA ĐƠN";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

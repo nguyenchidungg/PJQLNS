@@ -16,7 +16,6 @@ create table CHITIETHOADON
 go
 select * from CHITIETHOADON
 
-
 create table HOADON
 (
 	MAHOADON char(7) primary key not null,
@@ -25,13 +24,7 @@ create table HOADON
 	TONGTIEN decimal(10, 2) 
 )
 go
-INSERT INTO HOADON VALUES ('HD0521', 'Tran Van Dat', '2020/12/5 15:30:19', 705000);
-INSERT INTO HOADON VALUES ('HD0767', 'Le Thi Cuc', '2019/1/6 7:15:51', 525000);
-INSERT INTO HOADON VALUES ('HD0751', 'Nguyen Van An', '2021/4/1 11:00:39', 326000);
-INSERT INTO HOADON VALUES ('HD0709', 'Le Van Nam', '2021/2/2 18:37:12', 320000);
-INSERT INTO HOADON VALUES ('HD0753', 'Tran Van Trung', '2021/06/29 20:50:33', 420000);
 Select * From HOADON
-
 
 create table KHO
 (

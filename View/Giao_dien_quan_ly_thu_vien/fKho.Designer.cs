@@ -73,7 +73,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel1.Controls.Add(this.txMaSach);
             this.panel1.Location = new System.Drawing.Point(12, 603);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 92);
+            this.panel1.Size = new System.Drawing.Size(483, 92);
             this.panel1.TabIndex = 19;
             // 
             // txbMaSachThem
@@ -81,7 +81,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbMaSachThem.Location = new System.Drawing.Point(121, 11);
             this.txbMaSachThem.Name = "txbMaSachThem";
             this.txbMaSachThem.ReadOnly = true;
-            this.txbMaSachThem.Size = new System.Drawing.Size(206, 27);
+            this.txbMaSachThem.Size = new System.Drawing.Size(359, 27);
             this.txbMaSachThem.TabIndex = 20;
             // 
             // Nhap_numericUpDownSoLuong
@@ -98,7 +98,7 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             this.Nhap_numericUpDownSoLuong.Name = "Nhap_numericUpDownSoLuong";
-            this.Nhap_numericUpDownSoLuong.Size = new System.Drawing.Size(206, 27);
+            this.Nhap_numericUpDownSoLuong.Size = new System.Drawing.Size(175, 27);
             this.Nhap_numericUpDownSoLuong.TabIndex = 18;
             this.Nhap_numericUpDownSoLuong.Value = new decimal(new int[] {
             1,
@@ -118,9 +118,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bThemKho
             // 
-            this.bThemKho.Location = new System.Drawing.Point(352, 9);
+            this.bThemKho.Location = new System.Drawing.Point(320, 48);
             this.bThemKho.Name = "bThemKho";
-            this.bThemKho.Size = new System.Drawing.Size(106, 66);
+            this.bThemKho.Size = new System.Drawing.Size(160, 27);
             this.bThemKho.TabIndex = 13;
             this.bThemKho.Text = "THÊM";
             this.bThemKho.UseVisualStyleBackColor = true;
@@ -163,9 +163,9 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.bLuu);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(14, 260);
+            this.panel3.Location = new System.Drawing.Point(11, 260);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(459, 94);
+            this.panel3.Size = new System.Drawing.Size(487, 94);
             this.panel3.TabIndex = 22;
             // 
             // txbMaSachSua
@@ -173,7 +173,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbMaSachSua.Location = new System.Drawing.Point(119, 9);
             this.txbMaSachSua.Name = "txbMaSachSua";
             this.txbMaSachSua.ReadOnly = true;
-            this.txbMaSachSua.Size = new System.Drawing.Size(206, 27);
+            this.txbMaSachSua.Size = new System.Drawing.Size(365, 27);
             this.txbMaSachSua.TabIndex = 19;
             // 
             // Sua_numericUpDownSoLuong
@@ -190,7 +190,7 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             this.Sua_numericUpDownSoLuong.Name = "Sua_numericUpDownSoLuong";
-            this.Sua_numericUpDownSoLuong.Size = new System.Drawing.Size(206, 27);
+            this.Sua_numericUpDownSoLuong.Size = new System.Drawing.Size(178, 27);
             this.Sua_numericUpDownSoLuong.TabIndex = 18;
             this.Sua_numericUpDownSoLuong.Value = new decimal(new int[] {
             1,
@@ -210,9 +210,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // bLuu
             // 
-            this.bLuu.Location = new System.Drawing.Point(350, 9);
+            this.bLuu.Location = new System.Drawing.Point(321, 45);
             this.bLuu.Name = "bLuu";
-            this.bLuu.Size = new System.Drawing.Size(106, 67);
+            this.bLuu.Size = new System.Drawing.Size(163, 26);
             this.bLuu.TabIndex = 13;
             this.bLuu.Text = "LƯU";
             this.bLuu.UseVisualStyleBackColor = true;
@@ -242,13 +242,13 @@ namespace Giao_dien_quan_ly_thu_vien
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(259, 376);
+            this.label3.Location = new System.Drawing.Point(12, 380);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(298, 24);
+            this.label3.Size = new System.Drawing.Size(113, 24);
             this.label3.TabIndex = 24;
-            this.label3.Text = "* Thông tin sách có thể nhập *";
+            this.label3.Text = "Chọn Sách";
             // 
             // bChonSua
             // 
